@@ -1,5 +1,5 @@
-// export const Colors = {
-//     primary: "#482e9e",
-//     secondary: "#755EBB",
-//   };
+export const Colors = {
+    primary: "#5051ac",
+    secondary: "#755EBB",
+  };
   
