@@ -4,6 +4,7 @@ import Header from '../components/Header'
 import Search from '../components/Search'
 import Category from '../components/Category'
 import Banner from '../components/Banner'
+import Fooditems from '../components/Fooditems'
 
 export default function Home() {
     return (
@@ -13,6 +14,7 @@ export default function Home() {
                 <Search />
                 <Category />
                 <Banner />
+                <Fooditems />
             </SafeAreaView>
 
         </View>

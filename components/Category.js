@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Colors } from 'react-native/Libraries/NewAppScreen';
 
 export default function Category() {
-    const [selected, setSelected] = useState();
+    const [selected, setSelected] = useState(0);
 
     const data = [
         'All',
