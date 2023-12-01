@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, SafeAreaView } from 'react-native'
+import { StyleSheet, Text, View, SafeAreaView ,ScrollView} from 'react-native'
 import React from 'react'
 import Header from '../components/Header'
 import Search from '../components/Search'
@@ -8,24 +8,22 @@ import Fooditems from '../components/Fooditems'
 
 export default function Home() {
     return (
-        <View style={styles.viewContainer}>
-            <SafeAreaView style={styles.safeContainer}>
+        <ScrollView
+        showsVerticalScrollIndicator={false}
+        >
+         <SafeAreaView style={styles.safeContainer}>
                 <Header />
                 <Search />
                 <Category />
                 <Banner />
                 <Fooditems />
-            </SafeAreaView>
-
-        </View>
+        </SafeAreaView>
+        </ScrollView>
     )
 }
 
 const styles = StyleSheet.create({
-    viewContainer: {
-        flex: 1,
-
-    },
+ 
     safeContainer: {
         paddingHorizontal: 25,
         paddingTop: 60,
