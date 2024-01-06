@@ -37,3 +37,7 @@ function App() {
 
 export default App;
 `
+
+
+## navigation tab
+    npm install @react-navigation/bottom-tabs

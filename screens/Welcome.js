@@ -21,7 +21,7 @@ export default function Welcome() {
     <TouchableOpacity 
     style={styles.touchConatiner}
     onPress={()=>{
-      nav.navigate('Home')
+      nav.navigate('Tabs')
     }}
     >
       <Text style={styles.touchText}>Get Started</Text>
