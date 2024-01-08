@@ -1,10 +1,11 @@
-import { StyleSheet, Text, View, FlatList, Image } from 'react-native'
+import { StyleSheet, Text, View, FlatList, Image ,TouchableOpacity } from 'react-native'
 import React from 'react'
 import { Ionicons } from '@expo/vector-icons';
+import { useNavigation } from '@react-navigation/native';
 
 
 export default function Fooditems() {
-
+    const nav = useNavigation()
     const food = [
         {
             id: 1,
@@ -15,19 +16,19 @@ export default function Fooditems() {
         {
             id: 2,
             name: 'Pizza',
-            price: 100,
+            price: 50,
             
         },
         {
             id: 3,
             name: "Burger",
-            price: 100,
+            price: 80,
             
         },
         {
             id: 4,
             name: "Sandwich",
-            price: 100,
+            price: 35,
            
         }
     ]
@@ -39,7 +40,12 @@ export default function Fooditems() {
                 showsHorizontalScrollIndicator={false}
                 data={food}
                 renderItem={({ item, index }) => (
-                    <View style={styles.dataViev}>
+                    <TouchableOpacity 
+                    style={styles.dataViev}
+                    onPress={()=>
+                        nav.navigate('Details',{data: item})
+                     }
+                    >
 
                         <Image style={{ width: 85, height: 85 ,  alignSelf:'center' }} source={require("../assets/welcom.png")} />
                         <Text style={{fontSize: 20 , textAlign:'center'}}>{item.name}</Text>
@@ -48,7 +54,7 @@ export default function Fooditems() {
                             <Ionicons name="ios-add-circle" size={24} color="green" />
                         </View>
 
-                    </View>
+                    </TouchableOpacity>
 
                 )
                 }

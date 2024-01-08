@@ -1,4 +1,4 @@
-import { StyleSheet } from 'react-native'
+import { StyleSheet, View } from 'react-native'
 import React from 'react'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Searches from './Searches';
@@ -20,12 +20,22 @@ export default function Tabs() {
         <Tab.Navigator
             screenOptions={{
                 tabBarShowLabel: false,
+                headerShown:false
             }}
         >
             <Tab.Screen name="Home" component={Home} options={{
                 tabBarIcon: ({ focused }) => (
                     focused ?
-                        <Entypo name="home" size={24} color="black" />
+                        <View style={{
+                            backgroundColor:'#5051ac',
+                            width: 40,
+                            height:40 ,
+                            borderRadius: 40 ,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
+                        <Entypo name="home" size={24} color="white" />
+                        </View>
                         : (
                             <AntDesign name="home" size={24} color="black" />
                         )
@@ -39,7 +49,17 @@ export default function Tabs() {
                 tabBarIcon: ({ focused }) =>
                 (
                     focused ?
-                        <AntDesign name="search1" size={24} color="black" />
+                        <View style={{
+                            backgroundColor:'#5051ac',
+                            width: 40,
+                            height:40 ,
+                            borderRadius: 40 ,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
+                            <AntDesign name="search1" size={24} color="white" />
+                        </View>
+                        
                         : (
                             <AntDesign name="search1" size={24} color="grey" />
                         )
@@ -51,7 +71,16 @@ export default function Tabs() {
                 tabBarIcon: ({ focused }) =>
                 (
                     focused ?
-                        <Entypo name="shopping-cart" size={24} color="black" />
+                        <View style={{
+                            backgroundColor:'#5051ac',
+                            width: 40,
+                            height:40 ,
+                            borderRadius: 40 ,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
+                            <Entypo name="shopping-cart" size={24} color="white" />
+                        </View>
                         : (
                             <Feather name="shopping-cart" size={24} color="grey" />
                         )
@@ -63,7 +92,16 @@ export default function Tabs() {
                 tabBarIcon: ({ focused }) =>
                 (
                     focused ?
-                        <Ionicons name="person" size={24} color="black" />
+                        <View style={{
+                            backgroundColor:'#5051ac',
+                            width: 40,
+                            height:40 ,
+                            borderRadius: 40 ,
+                            justifyContent: 'center',
+                            alignItems: 'center',
+                        }}>
+                            <Ionicons name="person" size={24} color="white" />
+                        </View>
                         : (
                             <Ionicons name="person-outline" size={24} color="grey" />
                         )
