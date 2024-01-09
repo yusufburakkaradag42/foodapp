@@ -1,3 +1,14 @@
+`
+
+![Screenshot_1704797133](https://github.com/yusufburakkaradag42/foodapp/assets/118989504/1f60f0e1-24d6-4de8-b374-0496bb3f0aeb)
+![Screenshot_1704797127](https://github.com/yusufburakkaradag42/foodapp/assets/118989504/96e934ac-985f-4658-a256-16917b9a18e3)
+![Screenshot_1704797074](https://github.com/yusufburakkaradag42/foodapp/assets/118989504/f790b564-7a73-4330-9b7e-1027a6d2645c)
+![Screenshot_1704797071](https://github.com/yusufburakkaradag42/foodapp/assets/118989504/cc419ab0-2b89-4e3d-8230-0535bdfac88f)
+
+
+
+`
+
 `LinearGranient
     https://docs.expo.dev/versions/latest/sdk/linear-gradient/
     npx expo install expo-linear-gradient
